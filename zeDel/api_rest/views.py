@@ -62,11 +62,11 @@ def search_parceiro(request):
                 return Response(status=status.HTTP_404_NOT_FOUND)
 
             maisProximo = parceirosProximos.annotate(
-                distance=models.functions.Cast(
+                distancia=models.functions.Cast(
                     Distance('address', local),
                     output_field=CharField()
                 )
-            ).order_by('distance').first()
+            ).order_by('distancia').first()
 
             if maisProximo:
                 serializer = ParceiroSerializer(maisProximo)
