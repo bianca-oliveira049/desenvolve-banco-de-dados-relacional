@@ -12,18 +12,18 @@
 
 ### Ao rodar a API com "py manage.py runserver", o terminal fornecerá o link (como  http://127.0.0.1:8000/) que redirecionará o usuário para a API no navegador. Para executar as funções requisitadas:
 
-### - Visualizar os parceiros já cadastrados:
+## - Visualizar os parceiros já cadastrados:
 ###    http://127.0.0.1:8000/api
 
-### - Criar um parceiro:
+## - Criar um parceiro:
 ###    http://127.0.0.1:8000/api/parceiro/criar
 
 ###    No campo "Content", com o "MediaType' selecionado como "application/json", preencher as informações do novo parceiro em formato JSON. Mesmo que seja fornecido um id, um novo id será criado, já que este campo está como "AutoField" em "models.py'
 
-### - Buscar parceiro por id:
+## - Buscar parceiro por id:
 ###    http://127.0.0.1:8000/api/parceiro/idDesejado
 
-### - Buscar parceiro mais próximo:
+## - Buscar parceiro mais próximo:
 ###    http://127.0.0.1:8000/api/parceiro/buscar/?lat=valorLatitude&long=valorLongitude
 
 ### No caso de testes com parceiros já cadastrados:
